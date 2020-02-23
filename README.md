@@ -53,13 +53,13 @@ Where...
   Print exceptions discovered with parent entries
 * **-f**
 
-  Compare the SCM database with a list of names in a file called ```finance.txt```, and report for people in one and not the other (useful to check spelling errors, and correlation against other data sources
+  Compare the SCM database with a list of names in a file called ```finance.txt```, and report for people in one and not the other (useful to check spelling errors, and correlation against other data sources)
 * **-F**
 
   (Experimental) compare the SCM database with a file called ```facebook.txt``` which is a list of names of people in a closed Facebook group.  Used to check people are removed from facebook when they leave the club.   Some uses have different names in Facebook - if so add ```Facebook: xxx``` to the notes field in their SCM entry, replacing *xxx* with the name in facebook
 * **-c**
 
-  Report on users who have not confirmed the details, or whose details have not been confirmed in over 1 year.
+  Report on users who have not confirmed their details, or whose details have not been confirmed in over 1 year.
 * **-g**
 
   (Probably club specific) correlate people in groups and sessions.
@@ -101,7 +101,7 @@ Some errors you detect will be temporary.  To prevent the tools from keep repeat
 ```
 swimmer name, date
 ```
-to the file called ```EXCEPTIONS```, and the error will not appear until after the given date (mm/dd/yyyy).
+to the file called ```EXCEPTIONS```, and the error will not appear until after the given date (dd/mm/yyyy).
 
 To stop the warning on a more permanent basis, add on of the following to the Notes field in the user entry in SCM:
 * API: Coach no DBS OK
