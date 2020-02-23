@@ -1,2 +1,66 @@
 # SCM-Validator
 Validation tools for Swim Club Manager
+# 
+# Installation
+```
+git clone https://github.com/ColinRobbins/SCM-Validator.git
+cd SCM-Validator
+```
+## Prerequisites 
+You will need [perl](https://www.perl.org/get.html) installed.
+It has been tested and developed on Linux. 
+In theory it should work on Windows, but it is UNTESTED on Windows.
+## Configuration
+Some configuration is needed...
+### API Key
+You will need to get an API key from Swim Club Manager, which can be found in the "setup / club / club details" menu.
+Copy the key into the file ".key".
+**WARNING** if anyone gets a copy of this key, they have full access to read and delete all your SCM data.   **Look after it very carefully**.
+## Club Specific
+Some elements of the tool will be club specific.  I have tried to mark these with a comment ```CLUB SPECIFIC```.  Once I see how this is used by others we can adapt accordingly.
+# Usage
+```
+perl scm.pl <<options>>
+```
+Where...
+* **-e** - print exceptions discovered with the membership data
+* **-x** - (experimental) print all exceptions on a per member basis
+* **-p** - print exceptions discovered with parent entries
+* **-f** - compare the SCM database with a list of names in a file called ```finance.txt```, and report for people in one and not the other (useful to check spelling errors, and correlation against other data sources
+* **-F** - (experimental) compare the SCM database with a file called ```facebook.txt``` which is a list of names of people in a closed Facebook group.  Use to check people are removed from facebook when they leave the club.   Some uses have different names in Facebook - if so add ```Facebook: xxx``` to the notes field in their SCM entry, replacing *xxx* with the name in facebook
+* **-c** - report on uses who have not confirmed the details, or whose details have not been confirmed in over 1 year.
+* **-g** - (probably club specific) correlate people in groups and sessions.
+* **-s** - report on people that have either never attended a session they are in, of have not attended for over 120 days.
+* **-d** - report on DBS / Safeguarding about to expire.
+* **-S** - print a summary of the number of members/parents/coaches/inactive members in SCM.
+* **-E** - email a copy of the selected reports (see email configuration below)
+* **-u** - create an maintain a set of email lists in SCM, such as specific age groups of swimmers.
+* **-t** - print a report on the sessions coaches are assigned to, and their attendance at these sessions.
+* **-m** - compare members in SCM with the file asa.csv, exported from the Swim England membership system - used to check registration numbers are correct (and spots name spelling errors)
+* **-n** - prints out the notes field of members from SCM
+* **-a** - runs the following reports at the same time e,x,p,c,g,s,d,S,t
+
+### Email report option
+To use the email options these files are needed
+* **.username** - the username of the email account to use.
+* **.password** - the password of the email account.   **WARNING** take good care of this password.
+* **.sendto** - the email address the reports should be emailed to.
+### Exceptions
+Some errors you detect will be temporary.  To prevent the tools from keep repeating them add
+```
+swimmer name, date
+```
+to the file called ```EXCEPTIONS```, and the error will not appear until after the given date (mm/dd/yyyy).
+To stop the warning on a more permanent basis, add on of the following to the Notes field in the user entry in SCM:
+*API: Coach no DBS OK
+*API: Coach no Safeguard OK
+*API: Coach no sessions
+*API: Coach permission OK
+*API: no email OK
+*API: different email OK
+*API: non swimming master
+*API: no sessions OK
+*API: two groups OK
+*API: no groups OK
+
+
