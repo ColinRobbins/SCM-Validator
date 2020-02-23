@@ -3008,7 +3008,6 @@ END
 }
 
 set_quarter();
-print STDERR "Quarter offset = $quarter_offset\n";
 get_exceptions();
 get_data();
 analyse_data();
