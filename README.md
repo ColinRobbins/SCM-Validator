@@ -37,7 +37,14 @@ perl scm.pl <<options>>
 Where...
 * **-e**
 
-  Print exceptions discovered with the membership data
+  Print exceptions discovered with the membership data.
+  Tests include:
+  * Missing DoB
+  * Member / parent inconsistency
+  * Missing email
+  * Missing login for parents
+  * Missing Swim England no
+  * Erroneus login for U18 member
 * **-x**
 
   (Experimental) print all exceptions on a per member basis
