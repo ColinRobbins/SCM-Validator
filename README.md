@@ -8,6 +8,14 @@ cd SCM-Validator
 ```
 ## Prerequisites 
 You will need [perl](https://www.perl.org/get.html) installed.
+Dependencies (or simlar perl module loading mechanism):
+```
+sudo apt-get install libwww-perl
+sudo apt-get install libjson-pp-perl
+sudo apt-get install libtext-csv-perl
+sudo apt-get install libemail-sender-perl
+sudo apt-get install libemail-sender-transport-smtps-perl
+```
 
 It has been tested and developed on Linux. 
 
@@ -100,4 +108,7 @@ To stop the warning on a more permanent basis, add on of the following to the No
 * API: two groups OK
 * API: no groups OK
 
-
+# TODO
+* Add backup/arive feature (working in dev environment, need to add suitable encryption for GDPR)
+* Add sctipt to be club records web page (working in dev environment, but too club specific)
+* Re-write in Python
