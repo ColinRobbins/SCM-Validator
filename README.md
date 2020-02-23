@@ -28,37 +28,53 @@ perl scm.pl <<options>>
 ```
 Where...
 * **-e**
-  print exceptions discovered with the membership data
+
+  Print exceptions discovered with the membership data
 * **-x**
-  (experimental) print all exceptions on a per member basis
+
+  (Experimental) print all exceptions on a per member basis
 * **-p**
-  print exceptions discovered with parent entries
+
+  Print exceptions discovered with parent entries
 * **-f**
-  compare the SCM database with a list of names in a file called ```finance.txt```, and report for people in one and not the other (useful to check spelling errors, and correlation against other data sources
+
+  Compare the SCM database with a list of names in a file called ```finance.txt```, and report for people in one and not the other (useful to check spelling errors, and correlation against other data sources
 * **-F**
-  (experimental) compare the SCM database with a file called ```facebook.txt``` which is a list of names of people in a closed Facebook group.  Use to check people are removed from facebook when they leave the club.   Some uses have different names in Facebook - if so add ```Facebook: xxx``` to the notes field in their SCM entry, replacing *xxx* with the name in facebook
+
+  (Experimental) compare the SCM database with a file called ```facebook.txt``` which is a list of names of people in a closed Facebook group.  Use to check people are removed from facebook when they leave the club.   Some uses have different names in Facebook - if so add ```Facebook: xxx``` to the notes field in their SCM entry, replacing *xxx* with the name in facebook
 * **-c**
-  report on uses who have not confirmed the details, or whose details have not been confirmed in over 1 year.
+
+  Report on uses who have not confirmed the details, or whose details have not been confirmed in over 1 year.
 * **-g**
-  (probably club specific) correlate people in groups and sessions.
+
+  (Probably club specific) correlate people in groups and sessions.
 * **-s**
-  report on people that have either never attended a session they are in, of have not attended for over 120 days.
+
+  Report on people that have either never attended a session they are in, of have not attended for over 120 days.
 * **-d**
-  report on DBS / Safeguarding about to expire.
+
+  Report on DBS / Safeguarding about to expire.
 * **-S**
-  print a summary of the number of members/parents/coaches/inactive members in SCM.
+
+  Print a summary of the number of members/parents/coaches/inactive members in SCM.
 * **-E**
-  email a copy of the selected reports (see email configuration below)
+
+  Email a copy of the selected reports (see email configuration below)
 * **-u**
-  create an maintain a set of email lists in SCM, such as specific age groups of swimmers.
+
+  Create an maintain a set of email lists in SCM, such as specific age groups of swimmers.
 * **-t**
-  print a report on the sessions coaches are assigned to, and their attendance at these sessions.
+
+  Print a report on the sessions coaches are assigned to, and their attendance at these sessions.
 * **-m**
-  compare members in SCM with the file asa.csv, exported from the Swim England membership system - used to check registration numbers are correct (and spots name spelling errors)
+
+  Compare members in SCM with the file asa.csv, exported from the Swim England membership system - used to check registration numbers are correct (and spots name spelling errors)
 * **-n**
-  prints out the notes field of members from SCM
+
+  Prints out the notes field of members from SCM
 * **-a**
-  runs the following reports at the same time e,x,p,c,g,s,d,S,t
+
+  Runs the following reports at the same time e,x,p,c,g,s,d,S,t
 
 ### Email report option
 To use the email options these files are needed
