@@ -1,5 +1,5 @@
 # SCM-Validator
-Validation tools for Swim Club Manager
+Validation tools for [Swim Club Manager](https://www.swimclubmanager.co.uk/)
 # 
 # Installation
 ```
@@ -23,7 +23,7 @@ In theory it should work on Windows, but it is UNTESTED on Windows.
 ## Configuration
 Some configuration is needed...
 ### API Key
-You will need to get an API key from Swim Club Manager, which can be found in the "setup / club / club details" menu.
+You will need to get an [API key](https://help.swimclubmanager.co.uk/portal/kb/articles/api-documentation) from Swim Club Manager, which can be found in the "Setup > Club > Club Details" menu.
 
 Copy the key into the file ".key".
 
@@ -47,7 +47,7 @@ Where...
   * Erroneus login for U18 member
 * **-x**
 
-  (Experimental) print all exceptions on a per member basis
+  (Experimental) print all exceptions on a per-member basis
 * **-p**
 
   Print exceptions discovered with parent entries
@@ -56,16 +56,16 @@ Where...
   Compare the SCM database with a list of names in a file called ```finance.txt```, and report for people in one and not the other (useful to check spelling errors, and correlation against other data sources
 * **-F**
 
-  (Experimental) compare the SCM database with a file called ```facebook.txt``` which is a list of names of people in a closed Facebook group.  Use to check people are removed from facebook when they leave the club.   Some uses have different names in Facebook - if so add ```Facebook: xxx``` to the notes field in their SCM entry, replacing *xxx* with the name in facebook
+  (Experimental) compare the SCM database with a file called ```facebook.txt``` which is a list of names of people in a closed Facebook group.  Used to check people are removed from facebook when they leave the club.   Some uses have different names in Facebook - if so add ```Facebook: xxx``` to the notes field in their SCM entry, replacing *xxx* with the name in facebook
 * **-c**
 
-  Report on uses who have not confirmed the details, or whose details have not been confirmed in over 1 year.
+  Report on users who have not confirmed the details, or whose details have not been confirmed in over 1 year.
 * **-g**
 
   (Probably club specific) correlate people in groups and sessions.
 * **-s**
 
-  Report on people that have either never attended a session they are in, of have not attended for over 120 days.
+  Report on people that have either never attended a session they are in, or have not attended for over 120 days.
 * **-d**
 
   Report on DBS / Safeguarding about to expire.
@@ -77,7 +77,7 @@ Where...
   Email a copy of the selected reports (see email configuration below)
 * **-u**
 
-  Create an maintain a set of email lists in SCM, such as specific age groups of swimmers.
+  Create and maintain a set of email lists in SCM, such as specific age groups of swimmers.
 * **-t**
 
   Print a report on the sessions coaches are assigned to, and their attendance at these sessions.
@@ -116,6 +116,6 @@ To stop the warning on a more permanent basis, add on of the following to the No
 * API: no groups OK
 
 # TODO
-* Add backup/arive feature (working in dev environment, need to add suitable encryption for GDPR)
-* Add sctipt to be club records web page (working in dev environment, but too club specific)
-* Re-write in Python
+* Add backup/archive feature (working in dev environment, need to add suitable encryption for GDPR)
+* Add sctipt to build a club [records web page](https://www.leandersc.com/page/masters-records/12951) (working in dev environment, but too club specific)
+* Re-write in Python3
