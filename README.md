@@ -103,7 +103,7 @@ swimmer name, date
 ```
 to the file called ```EXCEPTIONS```, and the error will not appear until after the given date (dd/mm/yyyy).
 
-To stop the warning on a more permanent basis, add on of the following to the Notes field in the user entry in SCM:
+To stop the warning on a more permanent basis, add one of the following to the Notes field in the user entry in SCM:
 * API: Coach no DBS OK
 * API: Coach no Safeguard OK
 * API: Coach no sessions
@@ -117,5 +117,5 @@ To stop the warning on a more permanent basis, add on of the following to the No
 
 # TODO
 * Add backup/archive feature (working in dev environment, need to add suitable encryption for GDPR)
-* Add sctipt to build a club [records web page](https://www.leandersc.com/page/masters-records/12951) (working in dev environment, but too club specific)
+* Add script to build a club [records web page](https://www.leandersc.com/page/masters-records/12951) (working in dev environment, but too club specific)
 * Re-write in Python3
