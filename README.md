@@ -1,4 +1,15 @@
-# SCM-Validator
+# SUPERSEDED
+**This tools has been superseded.**
+
+**See [SCM Helper](https://github.com/ColinRobbins/scm-helper).**
+
+
+
+
+
+
+# LEGACY DOCUMENTATION...
+
 Validation tools for [Swim Club Manager](https://www.swimclubmanager.co.uk/)
 # 
 # Installation
@@ -116,6 +127,6 @@ To stop the warning on a more permanent basis, add one of the following to the N
 * API: no groups OK
 
 # TODO
-* Add backup/archive feature (working in dev environment, need to add suitable encryption for GDPR)
+* Add backup/archive feature (working in dev environment, need to add suitable encryption for GDPR) - **Done** - see [SCM Helper](https://github.com/ColinRobbins/scm-helper).
 * Add script to build a club [records web page](https://www.leandersc.com/page/masters-records/12951) (working in dev environment, but too club specific)
-* Re-write in Python3
+* Re-write in Python3 - **Done** - see [SCM Helper](https://github.com/ColinRobbins/scm-helper).
